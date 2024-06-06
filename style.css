@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+#pag{
+    width: 100%;
+    height: 100vh;
+}
+header{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 7vw;
+    z-index: 1000; 
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14%;
+    height: 100vh;
+    text-align: center;
+    background-color:  rgba(9, 9, 9, 0.9);
+}
+header ul li a img{
+    max-width: 90%;
+    padding-top: 10px;
+    margin-bottom:-50px;
+}
+header ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid #ffffff;  
+}
+section {
+    padding: 2% 10%; /* Adicione espaço para o conteúdo não ficar escondido pelo header */
+    height: 100vh;
+}
+section:nth-last-child(-n+4){
+    background: rgb(4,0,62);
+    background: linear-gradient(90deg, rgba(4,0,62,1) 0%, rgba(93,9,121,1) 100%, rgba(109,0,255,1) 100%);    
+}
+section#home{
+    background-image: url("https://blogdaengenharia.com/wp-content/uploads/2021/05/4182a9dd330c6442c4a1fbc78274d838-2000x1125.png");
+    background-position: center center;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    height: 60vh;
+    padding: 10% 5%;
+}
+
+.apresentacao h1 span{
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+
+.botaoContato{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 100px;
+    border: 1px solid   #fff;
+    border-radius: 5%;   
+}
+.botaoContato:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.botaoContato a{
+    color: #fff;
+}
+section#info{
+    display: flex;
+}
+
+.sobremim{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 75vh;
+    padding: 0 20px ;
+    margin-top: 9%;
+}
+
+.sobremim p{
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.imagem-code{
+    margin: 10% 0 0 2%;
+    width: 40vw;
+    background-image: url("./assents/code-snapshot.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+section#formacao{
+    display: flex;
+    gap: 20px;
+}
+.forma-academ{
+    width: 60%;
+    height: 100%;
+    margin: 5% 3% 0 0;
+    text-align: justify;
+}
+.forma-academ p{
+    padding: 10px 2px;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+.forma-code{
+    width: 45%;
+    height: 50%;
+    margin-top: 10%;
+    background-image: url("./assents/formacao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#projetos{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrosel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carrosel-item {
+    min-width: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrosel-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#contato{
+    width: 100vw;
+    height: 100%;
+}
+section#contato h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.redes { 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.redes a img{
+    height: 5vh;
+}
+
+/* Estilos para o formulário */
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+}
+input[type="submit"] {
+    background-color: #51008b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #3b0ea5;
+}
