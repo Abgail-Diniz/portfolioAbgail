@@ -1,84 +1,97 @@
+:root{
+    font-size: 16px;
+    --white: #fff;
+    --bgHerder:  rgba(9, 9, 9, 0.8);
+    --bgHover: rgba(62, 0, 59, 0.674);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    width: 100vw;  
+    height: 100vh;  
     font-family: 'Ubuntu', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-}
-#pag{
-    width: 100vw;
-    height: 100vh;
+    background: rgb(62, 0, 59);
+    background: linear-gradient(90deg, rgba(4,0,62,1) 0%, rgba(93,9,121,1) 100%, rgba(109,0,255,1) 100%); 
     overflow-x: hidden;
-    
 }
-header{    
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+/* Menu Fixo da Página */
+header.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.6875rem;
+    padding: 1rem 1.5rem 1rem 1rem;
+    background: var(--bgHerder);
     position: fixed;
-    top: 0;
-    left: 0;
-    max-width: 7vw;
-    z-index: 1000; 
+    z-index: 1;
 }
-header ul{
+.logo{
+    max-width: 5rem;
+    border-radius: 50%;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.menu a:hover{
+    background: var(--bgHover);
+}
+.btn-menu {
+    display: none;
+}
+/* Configuração Padrão de todas as section */
+section {   
+    width: 100vw;
+    height: 100%;
+    padding: 1rem 2rem 0;
+    color: var(--white);
+}
+/* Secão Inicial */
+section#home{
     display: flex;
     flex-direction: column;
-    gap: 14%;
-    height: 100vh;
-    text-align: center;
-    background-color:  rgba(9, 9, 9, 0.9);
-}
-header ul li a img{
-    max-width: 90%;
-    padding-top: 10px;
-    margin-bottom:-50px;
-}
-header ul li a{
-    color: #fff;
-    font-size: 16px;
-}
-header ul li a:hover{
-    border-bottom: 2px solid #ffffff;  
-}
-section {
-    padding: 2% 10%; /* Adicione espaço para o conteúdo não ficar escondido pelo header */
-    height: 100vh;
-}
-section:nth-last-child(-n+4){
-    background: rgb(4,0,62);
-    background: linear-gradient(90deg, rgba(4,0,62,1) 0%, rgba(93,9,121,1) 100%, rgba(109,0,255,1) 100%);    
-}
-section#home{
+    gap: 5rem;
     background-image: url("https://blogdaengenharia.com/wp-content/uploads/2021/05/4182a9dd330c6442c4a1fbc78274d838-2000x1125.png");
     background-position: center center;
+    padding: 15rem 5rem 4rem;
 }
 .apresentacao{
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 50%;
-    height: 60vh;
-    padding: 10% 5%;
 }
-
-.apresentacao h1 span{
-    display: flex;
-    font-size: 40px;
-    margin-bottom: 16px;
+.apresentacao h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
-
-
+.apresentacao span{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
 .botaoContato{
     all: unset;
     display: inline-block;
-    cursor: pointer;
-    width: 10%;
-    height: 10%;
-    padding: 10px;
-    text-align: center;
-    margin-left: 100px;
-    border: 1px solid   #fff;
+    width: 10rem;
+    padding: 1rem;
+    border: 0.0625rem solid #fff;
     border-radius: 5%;   
+    text-align: center;
+    cursor: pointer;
 }
 .botaoContato:hover{
     background-color: rgba(255, 255, 255, 0.2);
@@ -86,156 +99,224 @@ section#home{
 .botaoContato a{
     color: #fff;
 }
+
 section#info{
     display: flex;
 }
-
 .sobremim{
     display: flex;
     flex-direction: column;
     width: 55%;
     height: 75vh;
-    padding: 0 20px ;
     margin-top: 9%;
+    padding: 0 1.25rem ;
 }
-
 .sobremim p{
-    padding: 15px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: justify;
-    line-height: 35px;
+    line-height: 2.1875rem;
+    padding: 0.9375rem 0;
 }
-
 .imagem-code{
-    margin: 10% 0 0 2%;
     width: 40vw;
+    margin: 10% 0 0 2%;
     background-image: url("./assents/code-snapshot.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-
+/* Seção de Formação */
 section#formacao{
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .forma-academ{
-    width: 60%;
+    max-width: 45%;
     height: 100%;
-    margin: 5% 3% 0 0;
+    align-content: center;
+    justify-content: center;
+    margin: 0 0.3125rem;
     text-align: justify;
 }
 .forma-academ p{
-    padding: 10px 2px;
-    font-size: 20px;
-    line-height: 30px;
-
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+    padding: 0.625rem 0.125rem;
 }
 .forma-code{
     width: 45%;
     height: 50%;
-    margin-top: 10%;
-    background-image: url("./assents/formacao.png");
+    margin: auto;
+    background-image: url("./assents/formacao.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:  center center;
 }
+/* Seção sobre projetos á realizados */
 section#projetos{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    width: 75rem;
+    height: 33rem;
+    margin: 2rem auto 0;
+    border-radius: 0.3125rem;
     overflow: hidden;
 }
-
-.carrosel-inner {
+.slides{
+    width: 75rem;
+    height: 33rem;
     display: flex;
-    transition: transform 0.5s ease;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 75rem;
+    flex-shrink: 0;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
     height: 100%;
 }
-
-.carrosel-item {
-    min-width: 100%;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.prev, .next {
+.manual-navegacao{
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
+    width: 75rem;
+    margin-top: 34rem;
+}
+.manual-btn{
+    border: 0.125rem solid #fff;
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
     cursor: pointer;
-    border-radius: 50%;
-    user-select: none;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 7rem;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -75rem;
+}
+#radio3:checked ~ .first{
+    margin-left: -150rem;
+}
+.navegacao-auto div{
+    border: 0.125rem solid #20a6ffb6;
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.navegacao-auto{
+    position: absolute;
+    width: 75rem;
+    margin-top: 34rem;
+    display: flex;
+    justify-content: center;
+}
+.navegacao-auto div:not(:last-child){
+    margin-right: 7rem;
+}
+#radio1:checked ~ .navegacao-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navegacao-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navegacao-auto .auto-btn3{
+    background-color: #fff;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.carrosel-text {
-    margin-top: 20px;
-    font-size: 1.2em;
-    text-align: center;
-}
-
+/* Seção do Formulario */
 section#contato{
-    width: 100vw;
+    width: 100%;
     height: 100%;
+    padding-top: 5rem;
 }
 section#contato h2{
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
-    padding: 20px;
+    margin: auto;
+    padding: 1.25rem;
 }
 .redes { 
-    width: 100%;
     display: flex;
     justify-content: end;
-    gap: 10px;
+    gap: 0.625rem;
+    width: 50%;
+    margin: 0 auto;
 }
 .redes a img{
     height: 5vh;
 }
-
-/* Estilos para o formulário */
+.redes a:nth-of-type(3) img{
+    padding-right: 0.625rem;
+}
 form {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin: 0 auto;
 }
-label {
+.form label {
     font-weight: bold;
+    margin-bottom: 0.625rem;
 }
-
-input[type="text"],
-input[type="email"],
+.form label:not(:nth-of-type(1)){
+    margin-top: 1.5rem;
+}
+input,
 textarea {
     width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.5rem;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.3125rem;
     color: #000;
+    transition: border-color, 
+    box-shadow 0.2s;
 }
-input[type="submit"] {
-    background-color: #51008b;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+.form textarea{
+    min-height: 10rem;
+    resize: vertical;
+}
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    border-color: rgb(144, 87, 165);
+    box-shadow: 0 0 0 0.1875rem rgba(159, 97, 180, 0.694);
+}
+.form button{
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #0072c4;
+    border-radius: 0.3125rem;
     cursor: pointer;
+    transition: 0.2s;
+    border: none;
 }
-input[type="submit"]:hover {
-    background-color: #3b0ea5;
+.form button:hover,
+.form button:focus{
+    outline: none;
+    background: #09d;
+    border: 0.0625rem  solid #fff;
 }

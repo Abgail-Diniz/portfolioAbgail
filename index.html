@@ -1,116 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assents/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-media.css">
+        <script defer src="./script.js"></script>
+
         <title>Portfólio</title>
     </head>
     <body>
-        <div id="pag">
-            <header>
-                <ul>
-                    <li><a href="#"><img src="./assents/perfil.svg" alt="foto de perfil"></a></li>
+        <header class="header">
+            
+            <a href="#home"><img src="./assents/perfil.svg" alt="foto de perfil" class="logo"></a>
+            <nav class="nav">   
+
+                <button class="btn-menu"
+                        aria-label="Abrir Menu" 
+                        aria-haspopup="true" 
+                        aria-controls="menu" 
+                        aria-expanded="false" > 
+                    Menu
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="menu" id="menu" role="menu"> 
                     <li><a href="#home">Home</a></li>   
-                    <li><a href="#info">Sobre Mim</a></li>   
+                    <li><a href="#info">Informações</a></li>   
                     <li><a href="#formacao">Formação</a></li>   
-                    <li><a href="#projetos">Projetos</a></li>   
+                    <li><a href="#projetos">projetos</a></li>   
                     <li><a href="#contato">Contato</a></li>   
                 </ul>
-            </header>
+            </nav>
+        </header>
 
-            <section id="home">
-                <div class="apresentacao">
-                    <h1><span>Oie</span><span> Sou Abgail Diniz</span><span>Desenvolvedora</span></h1>
-                    <h3>Seja Bem-Vinda(a) ao meu Portfólio!</h3>
-                </div>    
-                <div>
-                    <button class="botaoContato">
-                        <a href="https://github.com/Abgail-Diniz">Contate-me</a>
-                    </button>
-                </div>
-            </section>
+        <section id="home">
+            <div class="apresentacao">
+                <h1>Abgail Diniz</h1>                   
+                <span>Desenvolvedora</span>
+            </div>    
+            <div>
+                <button class="botaoContato">
+                    <a href="https://github.com/Abgail-Diniz">Contate-me</a>
+                </button>
+            </div>
+        </section>
             
-            <section id="info">
-                <main class="sobremim">
-                    <p>
-                        Meu nome é Abgail, tenho 22 anos e moro no Brasil. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas, uma área que escolhi com o apoio de familiares e amigos. No início, foi muito difícil, mas continuei firme. A área de tecnologia é desafiadora, pois nos obriga a buscar diversas soluções para um mesmo problema, o que acho incrível. Cada colega de turma apresenta uma solução diferente, de acordo com sua vivência e lógica.
-                    </p>
-                    <p>
-                        A área de TI é muito abrangente, mas, no momento, me identifico mais com a parte visual. Pretendo evoluir cada vez mais, enfrentando os muitos obstáculos que surgirem pelo caminho.
-                    </p>
-                </main>
-                <article class="imagem-code">
+        <section id="info">
+            <main class="sobremim">
+                <p>
+                    Meu nome é Abgail, tenho 22 anos e moro no Brasil. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas, uma área que escolhi com o apoio de familiares e amigos. No início, foi muito difícil, mas continuei firme. A área de tecnologia é desafiadora, pois nos obriga a buscar diversas soluções para um mesmo problema, o que acho incrível. Cada colega de turma apresenta uma solução diferente, de acordo com sua vivência e lógica.
+                </p>
+                <p>
+                    A área de TI é muito abrangente, mas, no momento, me identifico mais com a parte visual. Pretendo evoluir cada vez mais, enfrentando obstáculos que surgirem pelo caminho.
+                </p>
+            </main>
+            <article class="imagem-code">
+            </article>
+        </section>
+        
+        <section id="formacao">
+            <main class="forma-academ">
+                <p>
+                    Iniciei meus estudos na Instituição Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais, campus Barbacena, onde fui monitora do projeto Smart Home, ensinando jovens de 14 a 15 anos sobre tecnologia e lógica de programação com Arduino. Durante essa experiência, desenvolvi habilidades de liderança e comunicação. Concluí o curso de Análise e Desenvolvimento de Sistemas na Uninter e pretendo me especializar em desenvolvimento de software.
+                </p>
 
-                </article>
+            </main>
+            <article class="forma-code">
+            </article>
+        </section>
+          
+        <section id="projetos">
 
-            </section>
-           
-            <section id="formacao">
-                <main class="forma-academ">
-                    <p>
-                        Iniciei meus estudos na Instituição Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais, no campus de Barbacena. Lá, participei como monitora do projeto Smart Home, que incentivava jovens de 14 a 15 anos a compreender os diversos ramos da tecnologia e a lógica da programação. Cada turma tinha a duração seis semanas e culminou com um trabalho final utilizando Arduino e componentes eletrônicos. Durante esse período, desenvolvi minhas habilidades de explicação e liderança.
-                    </p>
+            <div class="slider">
 
-                    <p>
-                        Por motivos pessoais, precisei mudar de cidade e transferi meus estudos para a Uninter, onde curso Análise e Desenvolvimento de Sistemas. Na Uninter, integro o grupo Umbrella, um coletivo que apoia mulheres na área de TI, promovendo um ambiente de colaboração e suporte mútuo. Minha participação nesses projetos e grupos tem sido fundamental para meu crescimento profissional e acadêmico. Planejo continuar me especializando em áreas específicas da TI, como desenvolvimento de software e inteligência artificial, buscando sempre aplicar e expandir meus conhecimentos.
-                    </p>
-                </main>
-                <article class="forma-code">
+                <div class="slides">
+                    <!-- radio button -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- Fim radio button -->
 
-                </article>
-
-            </section>
-
-            <section id="projetos">
-                    <button class="prev" onclick="prevSlide()">&#10094;</button>
-                    <div class="carrosel-inner">
-                        <div class="carrosel-item" data-text="Texto da Imagem 1" style="background-image: url('https://raw.githubusercontent.com/Abgail-Diniz/page.prime.video/main/.github/preview-primeira-temporada.jpg');">
-                        </div>
-
-                        <div class="carrosel-item" data-text="Texto da Imagem 2"        style="background-image: url('https://raw.githubusercontent.com/Abgail-Diniz/Controle-de-Habitos-NLW-Setup-2023/main/.github/preview.jpeg');">
-                        </div>
-
-                        <div class="carrosel-item" data-text="Texto da Imagem 3" style="background-image: url('https://raw.githubusercontent.com/Abgail-Diniz/my.links/main/.github/preview-dark.jpg');">
-                        </div>
+                    <!-- Slides Img -->
+                    <div class="slide first">
+                        <img src="https://raw.githubusercontent.com/Abgail-Diniz/page.prime.video/main/.github/preview-primeira-temporada.jpg"
+                        alt="Projeto 1">
                     </div>
-                    <button class="next" onclick="nextSlide()">&#10095;</button>
-                    <div class="carousel-text" id="carouselText"></div>
-            </section>
-            
-            <section id="contato">
-                <main>
-                    <h2>Contate-me</h2>
-                    <div class="redes">
-                        <a href="https://www.linkedin.com/in/abgail-diniz-b12814247/">
-                            <img src="./assents/icon-linkedin.svg" alt="Link do linkedin">
-                        </a>
 
-                        <a href="https://github.com/Abgail-Diniz">
-                            <img src="./assents/icon-github.svg" alt="Link do github">
-                        </a>
-                        
-                        <a href="mailto:abgdiniz718@gmail.com">
-                            <img src="./assents/icon-email.png" alt="Link do e-mail">
-                        </a>
+                    <div class="slide">
+                        <img src="https://raw.githubusercontent.com/Abgail-Diniz/Controle-de-Habitos-NLW-Setup-2023/main/.github/preview.jpeg" 
+                        alt="Projeto 2">
                     </div>
-                    <form action="#" method="post" class="formu">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" id="nome" name="nome" required><br><br>
+
+                    <div class="slide">
+                        <img src="https://raw.githubusercontent.com/Abgail-Diniz/my.links/main/.github/preview-dark.jpg" 
+                        alt="Projeto 3">
+                    </div>
+                    <!-- Fim slides img -->
+
+                    <!-- Navegação -->
+
+                    <div class="navegacao-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- Fim Navegação -->
+
+                    <!-- Manual de Naveção (circulos) -->
+                    <div class="manual-navegacao">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+
+                </div>            
+            </div>    
+        </section>
+         
+        <section id="contato">
+            <h2>Contate-me</h2>
+ 
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/abgail-diniz-b12814247/">
+                    <img src="./assents/icon-linkedin.svg" alt="Link do linkedin">
+                </a>
+
+                <a href="https://github.com/Abgail-Diniz">
+                    <img src="./assents/icon-github.svg" alt="Link do github">
+                </a>
                 
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
+                <a href="mailto:abgdiniz718@gmail.com">
+                    <img src="./assents/icon-email.png" alt="Link do e-mail">
+                </a>
+            </div>
+
+            <form action="https://formsubmit.co/abgdiniz718@gmail.com" method="post" class="form">
                 
-                        <label for="mensagem">Mensagem:</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-                
-                        <input type="submit" value="Enviar">
-                    </form>
-                </main>
-                            
-            </section>
-        </div>
-        <script src="./script.js"></script>
+                <label for="name">Nome:</label> 
+                <input type="text" name="name" id="name" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+        
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message"  placeholder="Escreva sua mensagem..." rows="4" cols="50" required></textarea>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
+        
+                <button type="submit">Enviar</button>
+            </form>                        
+        </section>         
     </body>
 </html>

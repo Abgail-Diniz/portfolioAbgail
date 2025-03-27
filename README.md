@@ -1,6 +1,6 @@
 <h1 align="center">📑 My Portfolio </h1>
 <p align=""center>
- O projeto foi desenvolvido utilizando as linguagens HTML, CSS e JavaScript. O portfólio ainda está em desenvolvimento e, em breve, receberá atualizações. O objetivo é adicionar o framework React, tornando a página mais interativa e com melhor desempenho.
+ O projeto foi desenvolvido com **HTML, CSS e JavaScript**. O portfólio ainda está em desenvolvimento e em breve receberá novas atualizações. O próximo passo é integrar o framework React, tornando a página mais interativa e com um desempenho aprimorado. 🚀
 </p>
 <br>
 
@@ -22,3 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML 
 - CSS
 - JavaScript
+
+
+
+
