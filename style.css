@@ -129,14 +129,16 @@ section#info{
 section#formacao{
     display: flex;
     gap: 1.25rem;
+    width: 100vw;
+    height: 100vh;
 }
 .forma-academ{
-    max-width: 45%;
+    max-width: 50%;
     height: 100%;
     align-content: center;
     justify-content: center;
-    margin: 0 0.3125rem;
     text-align: justify;
+    margin: 0 0.3125rem;
 }
 .forma-academ p{
     font-size: 1.25rem;
@@ -144,13 +146,15 @@ section#formacao{
     padding: 0.625rem 0.125rem;
 }
 .forma-code{
-    width: 45%;
-    height: 50%;
-    margin: auto;
-    background-image: url("./assents/formacao.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  center center;
+    max-width: 50vw;
+    height: 100vh;
+    margin-top: 12%;
+}
+.forma-code img{
+    width: 100%; 
+    height: 50vh;
+    border: 0.125rem solid #000000a4;
+    border-radius: 0.625rem;
 }
 /* Seção sobre projetos á realizados */
 section#projetos{
@@ -163,24 +167,24 @@ section#projetos{
     padding: 0;
 }
 .slider{
-    width: 75rem;
+    width: 75%;
     height: 33rem;
     margin: 2rem auto 0;
     border-radius: 0.3125rem;
     overflow: hidden;
 }
 .slides{
-    width: 75rem;
-    height: 33rem;
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 .slides input{
     display: none;
 }
 .slide{
-    width: 75rem;
-    flex-shrink: 0;
     position: relative;
+    width: 100%;
+    flex-shrink: 0;
     transition: 2s;
 }
 .slide img{
@@ -188,11 +192,11 @@ section#projetos{
     height: 100%;
 }
 .manual-navegacao{
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute;
-    width: 75rem;
-    margin-top: 34rem;
+    width: 75%;
+    margin-top: 32%;
 }
 .manual-btn{
     border: 0.125rem solid #fff;
@@ -211,10 +215,10 @@ section#projetos{
     margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -75rem;
+    margin-left: -100%;
 }
 #radio3:checked ~ .first{
-    margin-left: -150rem;
+    margin-left: -200%;
 }
 .navegacao-auto div{
     border: 0.125rem solid #20a6ffb6;
@@ -225,8 +229,8 @@ section#projetos{
 }
 .navegacao-auto{
     position: absolute;
-    width: 75rem;
-    margin-top: 34rem;
+    width: 75%;
+    margin-top: 32%;
     display: flex;
     justify-content: center;
 }

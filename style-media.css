@@ -8,10 +8,9 @@
 @media(max-width: 600px){
     html, body{
         width: 100%;
-        overflow-x: hidden;
         max-width: 100vw;
     }
-
+    
     .menu{
         display: block;
         position: absolute;
@@ -118,9 +117,10 @@
         display: flex;
         flex-direction: column;
         gap: 0;
+        padding-top: 5rem;
     }
     .forma-academ{
-        min-width: 100%;
+        max-width: 100%;
         height: 100%;
     }
     .forma-academ p{
@@ -129,43 +129,33 @@
         line-height: 1.9rem;
     }
     .forma-code{    
-        background-position:  left center;
-        width: 100%;
-        height: 65%;
-        padding: 5rem;
-        margin-bottom: 1rem;
+        max-width: 90vw;
+        margin-top: 1.5rem;
     }
-    /* pagina Projetos */
+    .forma-code img{
+        height: 35vh;
+    }
+    /* pagina Projetos*/
     .slider{
-        width: 32rem;
-        height: 22rem;
-        margin: auto;
+        width: 90%;
+        height: 50%;
+        margin: 2rem auto 0;
     }
-    .slide{
-        width: 32rem;
-        height: 22rem;
-    }
-   .manual-navegacao{
-        width: 32rem;
-        margin-top: 25rem;
-    }
+    .manual-navegacao{
+        width: 90%;
+        margin-top: 105%;
+    } 
     .manual-btn{
-        padding: 0.625rem;
-        border-radius: 0.3125rem;
+        padding: 0.4375rem;
+        border-radius: 1rem;
     }
-    #radio2:checked ~ .first{
-        margin-left: -32rem;
-    }
-    #radio3:checked ~ .first{
-        margin-left: -62rem;
-    }
-    .navegacao-auto{
-        width: 32rem;
-        margin-top: 25rem;
-    }
-    .navegacao-auto div{
-        padding: 0.625rem;
-        border-radius: 0.3125rem;
+     .navegacao-auto{
+        width: 90%;
+        margin-top: 105%;
+    } 
+     .navegacao-auto div{
+        padding: 0.4375rem;
+        border-radius: 1rem;
     }
 
     #contato .redes{
