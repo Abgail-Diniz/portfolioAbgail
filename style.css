@@ -17,7 +17,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background: rgb(62, 0, 59);
     background: linear-gradient(90deg, rgba(4,0,62,1) 0%, rgba(93,9,121,1) 100%, rgba(109,0,255,1) 100%); 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 a{
     color: var(--white);
@@ -67,7 +67,7 @@ section#home{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    background-image: url("https://blogdaengenharia.com/wp-content/uploads/2021/05/4182a9dd330c6442c4a1fbc78274d838-2000x1125.png");
+    background-image: url("./assents/backgroud.svg");
     background-position: center center;
     padding: 15rem 5rem 4rem;
 }
@@ -103,6 +103,7 @@ section#home{
 
 section#info{
     display: flex;
+    padding-top: 7%;
 }
 .sobremim{
     display: flex;
@@ -120,7 +121,7 @@ section#info{
 }
 .imagem-code{
     width: 40vw;
-    margin: 10% 0 0 2%;
+    margin: 9rem 0.5rem 0 0;
     background-image: url("./assents/code-snapshot.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -129,8 +130,8 @@ section#info{
 section#formacao{
     display: flex;
     gap: 1.25rem;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 .forma-academ{
     max-width: 50%;
@@ -142,7 +143,7 @@ section#formacao{
 }
 .forma-academ p{
     font-size: 1.25rem;
-    line-height: 1.5625rem;
+    line-height: 2rem;
     padding: 0.625rem 0.125rem;
 }
 .forma-code{
@@ -153,7 +154,7 @@ section#formacao{
 .forma-code img{
     width: 100%; 
     height: 50vh;
-    border: 0.125rem solid #000000a4;
+    border: 0.125rem solid #cccccc52;
     border-radius: 0.625rem;
 }
 /* Seção sobre projetos á realizados */
@@ -161,14 +162,15 @@ section#projetos{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 .slider{
+    display: flex;
     width: 75%;
-    height: 33rem;
+    min-height: 33rem;
     margin: 2rem auto 0;
     border-radius: 0.3125rem;
     overflow: hidden;
@@ -176,7 +178,7 @@ section#projetos{
 .slides{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 33rem;
 }
 .slides input{
     display: none;
@@ -191,12 +193,15 @@ section#projetos{
     width: 100%;
     height: 100%;
 }
+.slides .slide:nth-of-type(2)  img{
+    padding-right: 3rem;
+}
 .manual-navegacao{
     position: absolute;
     display: flex;
     justify-content: center;
     width: 75%;
-    margin-top: 32%;
+    margin-top: 35rem;
 }
 .manual-btn{
     border: 0.125rem solid #fff;
@@ -230,7 +235,7 @@ section#projetos{
 .navegacao-auto{
     position: absolute;
     width: 75%;
-    margin-top: 32%;
+    margin-top: 35rem;
     display: flex;
     justify-content: center;
 }

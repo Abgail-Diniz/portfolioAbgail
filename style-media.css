@@ -81,18 +81,16 @@
     }
 
     #home{
-        height: 100%;
         margin: auto;
-        align-items: center;
-        gap: 80%;    
+        align-items: center;  
     }
     .apresentacao{
         text-align: center;
         width: 100%;
-        margin: -4rem 0 8rem;
+        margin: -7rem 0 17rem;
     }
     .botaoContato{
-        width: 10rem;
+        width: 15rem;
     }
 
     section#info{
@@ -141,9 +139,12 @@
         height: 50%;
         margin: 2rem auto 0;
     }
+    .slides .slide:nth-of-type(2)  img{
+        padding-left: 3rem;
+    }
     .manual-navegacao{
         width: 90%;
-        margin-top: 105%;
+        margin-top: 27rem;
     } 
     .manual-btn{
         padding: 0.4375rem;
@@ -151,15 +152,18 @@
     }
      .navegacao-auto{
         width: 90%;
-        margin-top: 105%;
+        margin-top: 27rem;
     } 
      .navegacao-auto div{
         padding: 0.4375rem;
         border-radius: 1rem;
     }
+    /* Página Contato */
 
     #contato .redes{
         width: 70%;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
     }
     #contato .form{
         width: 70%;

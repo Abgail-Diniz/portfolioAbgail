@@ -1,6 +1,6 @@
 <h1 align="center">📑 My Portfolio </h1>
 <p align=""center>
- O projeto foi desenvolvido com **HTML, CSS e JavaScript**. O portfólio ainda está em desenvolvimento e em breve receberá novas atualizações. O próximo passo é integrar o framework React, tornando a página mais interativa e com um desempenho aprimorado. 🚀
+ O projeto foi desenvolvido com HTML, CSS e JavaScript. O portfólio ainda está em desenvolvimento e em breve receberá novas atualizações. O próximo passo é integrar o framework React, tornando a página mais interativa e com um desempenho aprimorado. 🚀
 </p>
 <br>
 
